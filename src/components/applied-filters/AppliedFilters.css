@@ -1,0 +1,50 @@
+.applied-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  margin-bottom: 10px;
+  
+}
+
+.applied-filters-container > * {
+  margin: 0 5px 5px 0;
+}
+
+.applied-filters-container > *:last-child {
+  margin-right: 0;
+}
+
+.applied-filters-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: grey;
+  margin-right: 50px;
+}
+
+.applied-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.applied-filters-list > * {
+  margin: 0 5px 5px 0;
+}
+
+.applied-filters-list > *:last-child {
+  margin-right: 0;
+}
+
+/* pill item css */
+.applied-filters-pill {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #8080801a;
+  color: grey;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}

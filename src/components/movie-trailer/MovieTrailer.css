@@ -1,0 +1,23 @@
+.trailer-container {
+  height: 35vh;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.trailer-container .__youtube-video {
+  width: 65%;
+  height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .trailer-container {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .trailer-container {
+    height: 55vh;
+  }
+}

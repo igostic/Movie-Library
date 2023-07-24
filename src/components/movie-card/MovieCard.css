@@ -1,0 +1,121 @@
+.movie-card {
+  overflow: hidden;
+  cursor: pointer;
+}
+.movie-card .image-container {
+  aspect-ratio: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid transparent;
+  transition: 0.3s all ease-in-out;
+}
+
+.movie-card .image-container:hover {
+  border-color: var(--primary-color);
+}
+
+.movie-card .image-container .__image {
+  width: 100%;
+  aspect-ratio: 0.75;
+}
+
+.movie-card .content {
+  padding: 10px;
+}
+
+.movie-card .content .__name,
+.movie-card .content .__language {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.movie-card .content .__language {
+  text-align: left;
+  margin-top: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.movie-card.loading {
+  background-color: var(--secondary-color);
+}
+
+.voting-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3px 4px;
+  /* background-color: var(--primary-color); */
+  color: #ffffff;
+  border-radius: 5px 0 0 0;
+  font-size: 8px;
+}
+
+.voting-container .voting-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.voting-container .voting-icon-wrapper svg {
+  width: 15px;
+}
+
+.voting-container .voting-icon-wrapper > span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.voting-text {
+  text-align: right;
+}
+
+.__voting-text {
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.date-container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 4px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 8px;
+}
+
+.date-container .__date {
+  display: flex;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 8px;
+}
+
+ .__play {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
